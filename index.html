@@ -11,6 +11,12 @@
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/0286276466.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -46,9 +52,8 @@
         </div>
     </nav>
 
-
-    <!-- Callout section -->
-    <article class="container mt-3">
+    <!-- SALE ALERT -->
+    <!-- <div class="container alert-container">
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning">
@@ -56,25 +61,31 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+        <!-- Callout section -->
+
+    <div class="container-fluid callout-container">
+        <div class="opaque-overlay">&nbsp;</div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
-                    <h1>The finest whiskeys delivered to your doorstep.</h1>
+                    <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+                    <hr class="block-divider block-divider--orange">
                     <p class="lead">Sign up today to start receiving the worlds best whiskey
                         <s class="d-none d-sm-inline">£19.99</s>
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>The first one is free!</mark></strong>
                     </p>
-                    <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+                    <button class="btn btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
                     <p class="text-muted"><small>You must be over 18 to use our service. Please, drink responsibly.</small></p>
                 </section>
             </div>
         </div>
+    </div>
 
-        <hr>
-
-
-        <!-- Quotes section -->
+    <!-- Quotes section -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
                 <div class="col-12 my-5">
@@ -108,10 +119,10 @@
                 </div> 
             </div>
         </section>
+    </div>
 
-        <hr>
-
-        <!-- Feature section -->
+    <!-- Feature section -->
+    <div class="container features-container">
         <section class="features">
             <div class="row">
                 <div class="col-12 my-5">
@@ -146,43 +157,48 @@
             </div>
 
         </section>
-
-    </article>
+    </div>
     
+    <!-- Modal -->
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Sign Up!</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Sign Up!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-              </button>
+                </button>
             </div>
+
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
+
                     <div class="form-group">
-                      <label for="password">Password</label>
-                      <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password">
                     </div>
+
                     <div class="form-group">
                         <label for="repeatPassword">Repeat Password</label>
                         <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat password">
-                      </div>
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+
                     <button type="submit" class="btn btn-success">Submit</button>
-                  </form>
+
+                </form>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
     
     <!--Bootstrap Plugins-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
