@@ -2,10 +2,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container-wrapper {
-
-}
-
 .container-wrapper-red {
     background-color: #f05f40;
     color: white;
@@ -14,19 +10,29 @@ body {
 .alert-container .col-12 {
     padding-left: 0;
     padding-right: 0;
-
 }
+
 
 .site-wide-alert {
     border-radius: 0;
     margin-bottom: 0;
     padding: 5px 15px;
-    background-color: #eec802;
-    border-color: #eec802;
+    background-color: #3a1f0d;
+    border-color: #3a1f0d;
+    color: #f3cc31;
 }
+
+.site-wide-alert a {
+    color: #ffffffc7;
+}
+
+.site-wide-alert strong {
+    margin-right: 10px;
+}
+
 .callout-container {
     height:100vh;
-    background: url(../images/whiskey-background.jpg) no-repeat bottom right fixed; 
+    background: url(../images/whiskey-background.jpg) no-repeat bottom right; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -39,6 +45,13 @@ body {
     position: relative;
 }
 
+.callout mark {
+    padding: 0.35em;
+    background-color: #fcf8e3;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
 .opaque-overlay {
     position: absolute;
     top: 0;
@@ -46,14 +59,6 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-.quotes-container {
-
-}
-
-.features-container {
-
 }
 
 /* page headers */
